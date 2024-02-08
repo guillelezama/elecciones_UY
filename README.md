@@ -4,6 +4,8 @@ This Flask application allows users to query and view the results of their preci
 
 It queries rows from a Parquet file hosted online based on user input. It provides a simple web interface where users can enter a series (`ser`) and a number (`num`) to search for corresponding data in the Parquet file.
 
+Link to the app (hosted in Heroku): https://guarded-basin-84393-47f3b0873270.herokuapp.com/
+
 ## Features
 
 - Web form to accept user input for series and number.
