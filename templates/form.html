@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vote Data Query</title>
+</head>
+<body>
+    <h1>Consultá como votó tu circuito en Octubre 2019.</h1>
+    <h4>Escribí acá una credencial, y te dice como votó el circuito de esa persona en Octubre de 2019 (excluyendo voto en blanco y anulados). Por ejemplo, si tu credencial es ALA 5140, ahí te va a decir que en ese circuito el 27.86% votó al frente.</h4>
+
+    <form action="/result" method="post">
+        Serie: <input type="text" name="ser"><br>
+        Number: <input type="number" name="num"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
