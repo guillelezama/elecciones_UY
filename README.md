@@ -1,6 +1,6 @@
 # Elections Result Data Viewer
 
-This Flask application allows users to query and view the results of their precint in the 2019 Uruguayan Elections, based on an id number.
+This Flask application allows users to query and view the results of their precinct in the period 2004-2022 for the Uruguayan Elections based on an ID number.
 
 It queries rows from a Parquet file hosted online based on user input. It provides a simple web interface where users can enter a series (`ser`) and a number (`num`) to search for corresponding data in the Parquet file.
 
