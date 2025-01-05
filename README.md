@@ -1,41 +1,33 @@
-# Elections Result Data Viewer
+# Elecciones_UY
 
-This Flask application allows users to query and view the results of their precinct in the period 2004-2022 for the Uruguayan Elections based on an ID number.
+This repository contains a collection of interactive applications and Jupyter Notebooks designed to explore and analyze Uruguay’s electoral data from 2004 through 2024. Each component serves a specific purpose, ranging from individual voter information lookups to broader demographic and geographic analyses.
 
-It queries rows from a Parquet file hosted online based on user input. It provides a simple web interface where users can enter a series (`ser`) and a number (`num`) to search for corresponding data in the Parquet file.
+## Contents
 
-Link to the new app (hosted in Heroku): https://votos-74f9322556b9.herokuapp.com/
+1. **`app_1`**  
+   An interactive application where you can enter any *credencial* (Uruguayan voter ID) to see how that person’s precinct (*circuito*) voted in national elections between 2004 and 2019.
 
-## Features
+2. **`app_busqueda_after_election`**  
+   A specialized application built for *Semanario Búsqueda* that allows users to input a *credencial* and retrieve voting details for both the 2019 and 2024 elections, including first and second rounds.
 
-- Web form to accept user input for series and number.
-- Downloads and reads Parquet file in chunks to find the specific row.
-- Displays results on a web page if the row is found.
+3. **`map_busqueda`**  
+   Another application tailored for *Semanario Búsqueda*. This tool provides an interactive map of Uruguay and displays how each *Serie* (a code identifying a city or neighborhood) voted in the 2019 and 2024 elections, for both rounds.
 
-## Dependencies
+4. **`candidates`**  
+   A Jupyter Notebook analyzing the geographic origins (based on where they voted) of the candidates for each major political party.
 
-- Flask
-- pandas
-- pyarrow
-- requests
+5. **`series`**  
+   A Jupyter Notebook examining changes in voting behavior over time by leveraging Uruguay’s stable voter identification system. Specifically, it tracks the evolution of the *Frente Amplio* (FA) vote share in each precinct from 2004 to 2024.
 
-This application requires Python 3.6+.
+6. **`edades`**  
+   A Jupyter Notebook comparing the support Yamandú Orsi received from different age groups in Uruguay. It highlights how *new voters* (those who did not vote in the previous election) differ from older cohorts in terms of their voting behavior.
 
-## Usage
+---
 
-To run the application:
+## Data
 
-1. Activate the virtual environment if it's not already activated.
-2. Start the Flask app.
-3. Open your web browser and navigate to `http://127.0.0.1:5000/`.
-
-Enter a series and number in the form and submit to view the data. If the data for the given series and number is found, the application will display the results.
-
-## Development
-
-This application is set up for development with Flask's debug mode turned off. For development purposes, you can set `debug=True` in `app.run()` within `app.py`. However, ensure that debug mode is turned off in production environments for security reasons.
+- Most applications and notebooks will have instructions on where to place necessary data files (if they aren’t already included).
+- Make sure the data folders are properly set up before running any analyses.
 
 ## Contributing
-
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
+Contributions are welcome! If you have ideas for improvements or find any issues, feel free to open an issue or submit a pull request.
